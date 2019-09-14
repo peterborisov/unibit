@@ -1,0 +1,121 @@
+body {
+  background-color: #858585;
+}
+
+html, body, h1, h3, h4, p {
+  margin: 0;
+}
+
+.background {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 30%;
+  height: 100%;
+  background-color: #D7D4D5;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-box-shadow: -20px 170px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -20px 170px 30px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content .title {
+  color: #343434;
+  font-size: 3vw;
+  text-align: left;
+  margin: 2rem 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.content .content-wrapper-left {
+  width: 25%;
+  height: auto;
+  left: 0;
+  float: left;
+  background-color: #2E3538;
+  padding-bottom: 4rem;
+}
+
+.content .content-wrapper-left .top-left-content-article {
+  background-color: #49ABB8;
+  padding-bottom: 2rem;
+}
+
+.content .content-wrapper-left .top-left-content-article .profile-image {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin: 10% 25%;
+}
+
+.content .content-wrapper-left .top-left-content-article .sub-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 100;
+}
+
+.content .content-wrapper-left .bottom-left-content-article h5 {
+  color: #49AAB6;
+}
+
+.content .content-wrapper-left .bottom-left-content-article p {
+  color: white;
+  text-align: left;
+  word-break: break-all;
+  padding: 0 10px;
+}
+
+.content .content-wrapper-left .bottom-left-content-article ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content .content-wrapper-left .bottom-left-content-article ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.content .content-wrapper-left .bottom-left-content-article ul li a:hover {
+  font-size: 20px;
+}
+
+.content .content-wrapper-right {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  right: 0;
+  float: right;
+  background-color: #EBEBEB;
+}
+
+.content .content-wrapper-right .personal-details {
+  padding: 5%;
+  border-bottom: 1px solid lightgray;
+}
+
+.content .content-wrapper-right .personal-details h4 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.content .content-wrapper-right .personal-details .red-color {
+  color: red;
+}
+
+.content .content-wrapper-right .personal-details p {
+  text-align: left;
+}
+
+.content .content-wrapper-right .personal-details table {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
