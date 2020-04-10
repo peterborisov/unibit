@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <label for="stringInput">Enter your text:</label><br>
+            <textarea id="stringInput" rows="4" cols="50"
+                placeholder="Enter your text and manipulate it, via buttons below!"></textarea><br>
+        </div>
+        <div>
+            <label for="searchStr">String method 1 search word in text:</label><br>
+            <input type="text" id="searchStr" name="searchStr"><br>
+            <p id="searchResult"></p>
+            <button type="button" id="searchBtn">Search</button><br>
+        </div>
+        <div>
+            <label for="replaceStr">String method 2 replace word in text:</label><br>
+            <input type="text" id="replaceStr" name="replaceStr"><br>
+            <label for="replaceStrWith">replace string with:</label><br>
+            <input type="text" id="replaceStrWith" name="replaceStrWith"><br>
+            <p id="replaceResult"></p>
+            <button type="button" id="replaceBtn">Replace</button><br>
+        </div>
+        <div>
+            <label for="sortAcs">String method 3 Sort A-Z:</label><br>
+            <input type="radio" id="sortAcs" name="sort"><br>
+            <label for="sortDes">String method 3 Sort Z-A:</label><br>
+            <input type="radio" id="sortDes" name="sort"><br>
+            <button type="button" id="sortBtn">Sorting</button>
+        </div>
+        <hr>
+        <div>
+            <label for="arrInput">Enter your Array:</label><br>
+            <textarea id="arrInput" rows="4" cols="50"
+                placeholder="Enter your array, separated by ',' 1, yep, 6, nope"></textarea><br>
+        </div>
+        <div>
+            <label for="arrAdd">Array 1 add:</label><br>
+            <input type="text" id="arrAdd" name="arrAdd"><br>
+            <button type="button" id="arrAddBtn">Add</button><br>
+        </div>
+        <div>
+            <label for="arrRemoveInp">Array 2 remove:</label><br>
+            <input type="text" id="arrRemoveInp" name="arrRemoveInp"><br>
+            <button type="button" id="arrRemoveBtn">Remove</button><br>
+        </div>
+        <div>
+            <label for="removeDublicated">Array 3 remove dublicated:</label><br>
+            <button type="button" id="removeDublicatedBtn">Remove dublicated</button><br>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

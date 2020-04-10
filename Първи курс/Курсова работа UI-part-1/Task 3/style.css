@@ -1,0 +1,50 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wrapper{
+    height: 100%;
+    width: 80%;
+    background-color: grey;
+    margin: 0 auto;
+}
+
+h3{
+    width: 100%;
+    text-align: center;
+    color: lightblue;
+}
+.image{
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;
+    background-image: url(./assets/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.switcher-wrapper{
+    margin: 2rem 0;
+    height: 3rem;
+    text-align: center;
+}
+
+.switcher{
+    color: white;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: indigo;
+    display: inline-block;
+    margin: 0 1rem;
+    vertical-align: middle;
+}
+
+.switcher:hover{
+    background-color: lawngreen;
+    cursor: pointer;
+}

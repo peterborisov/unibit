@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <fieldset>
+                <legend>Enter car details:</legend>
+                <select id="make" name="make">
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Audi">Audi</option>
+                </select><br>
+                <label for="year">Year after:</label><br>
+                <input type="text" id="year" name="year"><br>
+                <label for="color">Color:</label><br>
+                <input type="text" id="color" name="color"><br>
+                <label for="minPrice">Min Price:</label><br>
+                <input type="text" id="minPrice" name="minPrice"><br>
+                <label for="maxPrice">Max Price:</label><br>
+                <input type="text" id="maxPrice" name="maxPrice"><br>
+                <input type="radio" name="doors" value="4/5 doors">
+                <label for="allDoors">4/5 doors</label><br>
+                <input type="radio" name="doors" value="2/3 doors">
+                <label for="lessDoors">2/3 doors</label><br>
+                <input type="checkbox" name="extras" value="4x4">
+                <label for="fourWD">4x4</label><br>
+                <input type="checkbox" name="extras" value="TV">
+                <label for="tv">TV</label><br>
+                <input type="checkbox" name="extras" value="GPS">
+                <label for="gps">GPS</label><br>
+                <button type="button" id="submit">Submit</button>
+                <input type="reset">
+            </fieldset>
+        </form>
+        <p id="carResult"></p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

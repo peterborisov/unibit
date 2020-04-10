@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script>
+        let init = () => {
+
+            //Aritmetic operator
+            let aritmeticOperator = document.getElementsByClassName('aritmeticOperator')[0],
+                aritmeticInput = aritmeticOperator.querySelectorAll('input'),
+                aritmeticParagraph = document.getElementById('aritmeticParagraph'),
+                aritmeticCalcBtn = document.getElementById('aritmeticCalcBtn'),
+                selectValue = document.getElementById("aritmetic"),
+                aritmeticResult = 0;
+
+            aritmeticBtn.onclick = () => {
+                //Values are string by default, so we parse them as Number
+                let firstValue = aritmeticInput[0].valueAsNumber,
+                    secondValue = aritmeticInput[1].valueAsNumber;
+
+                selectValue.value === '+' ? aritmeticResult = firstValue + secondValue :
+                    selectValue.value === '-' ? aritmeticResult = firstValue - secondValue :
+                        selectValue.value === '*' ? aritmeticResult = firstValue * secondValue :
+                            selectValue.value === '/' ? aritmeticResult = firstValue / secondValue :
+                                aritmeticResult = firstValue % secondValue;
+                aritmeticParagraph.innerHTML =
+                    `Result for ${firstValue} ${selectValue.value} ${secondValue} = ${aritmeticResult}`;
+            }
+
+            //Comparing operator
+            let compareOperator = document.getElementsByClassName('compareOperator')[0],
+                compareInput = compareOperator.querySelectorAll('input'),
+                compareParagraph = document.getElementById('compareParagraph'),
+                compareCalcBtn = document.getElementById('compareCalcBtn'),
+                selectCompareValue = document.getElementById("compare"),
+                compareResult = Boolean;
+
+            compareCalcBtn.onclick = () => {
+                let firstValue = compareInput[0].value,
+                    secondValue = compareInput[1].value;
+
+                selectCompareValue.value === '===' ? compareResult = firstValue === secondValue :
+                    selectCompareValue.value === '==' ? compareResult = firstValue == secondValue :
+                        selectCompareValue.value === '!==' ? compareResult = firstValue !== secondValue : '';
+                compareParagraph.innerHTML =
+                    `Result for ${firstValue} ${selectCompareValue.value} ${secondValue} = ${compareResult}`;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", init);
+    </script>
+</head>
+
+<body>
+    <div class="aritmeticOperator">
+        <input type="number">
+        <select id="aritmetic">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        <input type="number">
+        <button id="aritmeticBtn">Calculate</button>
+        <p id="aritmeticParagraph"></p>
+    </div>
+    <hr>
+    <div class="compareOperator">
+        <input type="text">
+        <select id="compare">
+            <option value="===">===</option>
+            <option value="==">==</option>
+            <option value="!==">!==</option>
+        </select>
+        <input type="text">
+        <button id="compareCalcBtn">Calculate</button>
+        <p id="compareParagraph"></p>
+    </div>
+</body>
+
+</html>
